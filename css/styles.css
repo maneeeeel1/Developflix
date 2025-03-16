@@ -13,6 +13,70 @@ body {
 h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  text-decoration: underline;
+  color:aliceblue;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color:white;
+  text-align: center;
+  background: linear-gradient(120deg, #535353, #bebdbd);
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 200%;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #080808, #fcfafa);
+  bottom: 0;
+  left: 0;
+  animation: underline 1s infinite alternate;
+}
+
+@keyframes underline {
+  0% { width: 0; }
+  100% { width: 100%; }
+
+}
+
+.genero-container{
+  width:200%;
+  background-color: rgb(110, 110, 110);
+  border-radius: 10px;
+}
+
+#genero-28{
+  display:flex;
+  gap: 20px;
+}
+#genero-53{
+  display:flex;
+  gap: 20px;
+}
+#genero-12{
+  display:flex;
+  gap: 20px;
 }
 
 
+
+.pelicula img{
+  width: 100px;
+}
+.pelicula p{
+  color:aliceblue;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
